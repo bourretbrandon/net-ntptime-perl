@@ -16,10 +16,13 @@ my $ntp_time = get_ntp_time;
 my $ntp_time = get_ntp_time('ntp.server.com');
 
 Pollutes the namespace with two functions: get_unix_time & get_ntp_time
+
 METHODS
+
 get_unix_time(OPTIONAL_NTP_SERVER)
 
 Returns an integer timestamp indicating the number of elapsed seconds since 00:00 01-JAN-1970. You may include a specific NTP server to ping, or a default server will be used.
+
 get_ntp_time(OPTIONAL_NTP_SERVER)
 
 Returns an integer timestamp indicating the number of elapsed seconds since 00:00 01-JAN-1900. You may include a specific NTP server to ping, or a default server will be used.
